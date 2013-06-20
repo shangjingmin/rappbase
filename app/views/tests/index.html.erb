@@ -1,0 +1,43 @@
+<h1>Listing tests</h1>
+
+<table>
+  <tr>
+    <th>String</th>
+    <th>Integer</th>
+    <th>Float</th>
+    <th>Decimal</th>
+    <th>Datetime</th>
+    <th>Timestamp</th>
+    <th>Time</th>
+    <th>Date</th>
+    <th>Boolean</th>
+    <th>Text</th>
+    <th>Binary</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @tests.each do |test| %>
+  <tr>
+    <td><%= test.string %></td>
+    <td><%= test.integer %></td>
+    <td><%= test.float %></td>
+    <td><%= test.decimal %></td>
+    <td><%= test.datetime %></td>
+    <td><%= test.timestamp %></td>
+    <td><%= test.time %></td>
+    <td><%= test.date %></td>
+    <td><%= test.boolean %></td>
+    <td><%= test.text %></td>
+    <td><%= test.binary %></td>
+    <td><%= link_to 'Show', test %></td>
+    <td><%= link_to 'Edit', edit_test_path(test) %></td>
+    <td><%= link_to 'Destroy', test, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Test', new_test_path %>
