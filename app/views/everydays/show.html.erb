@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Category:</b>
+  <%= @everyday.category %>
+</p>
+
+<p>
+  <b>Event:</b>
+  <%= @everyday.event %>
+</p>
+
+<p>
+  <b>Begin at:</b>
+  <%= @everyday.begin_at %>
+</p>
+
+<p>
+  <b>Quantity:</b>
+  <%= @everyday.quantity %>
+</p>
+
+<p>
+  <b>Scene:</b>
+  <%= @everyday.scene %>
+</p>
+
+<p>
+  <b>Remark:</b>
+  <%= @everyday.remark %>
+</p>
+
+
+<%= link_to 'Edit', edit_everyday_path(@everyday) %> |
+<%= link_to 'Back', everydays_path %>

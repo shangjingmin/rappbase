@@ -1,4 +1,7 @@
 Rappbase::Application.routes.draw do
+  resources :everydays
+
+
   resources :tests
 
 

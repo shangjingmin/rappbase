@@ -1,0 +1,16 @@
+<%= simple_form_for(@everyday) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :category, collection: Everyday::CATEGORY.keys, prompt: "select category" %>
+    <%= f.input :event %>
+    <%= f.input :begin_at %>
+    <%= f.input :quantity %>
+    <%= f.input :scene %>
+    <%= f.input :remark %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
