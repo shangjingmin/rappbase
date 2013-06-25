@@ -1,8 +1,8 @@
-<%= simple_form_for(@test) do |f| %>
+<%= simple_form_for @test, validate: true, html: {class: "custom"}, defaults: {wrapper_html: {class: "row"}, label_html: {class: "right"}} do |f| %>
   <%= f.error_notification %>
 
   <div class="form-inputs">
-    <%= f.input :string %>
+    <%= f.input :string, input_html: {class: "small-2"} %>
     <%= f.input :integer %>
     <%= f.input :float %>
     <%= f.input :decimal %>
