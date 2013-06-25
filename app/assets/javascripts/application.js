@@ -12,6 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery/jquery.ui
+//= require jquery/jquery-ui-sliderAccess
+//= require jquery/jquery-ui-timepicker-addon
+//= require jquery/jquery-ui-timepicker-zh-CN
 //= require foundation
 //= require_tree .
 
