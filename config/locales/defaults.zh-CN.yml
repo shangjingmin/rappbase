@@ -14,11 +14,6 @@ zh-CN:
     labels:
       defaults:
         password: 'Password'
-      test:
-        string: '字符串'
-        float: '浮点'
-        edit:
-          float: '修改浮点'
     placeholders:
       defaults:
         string: '输入字符串'
