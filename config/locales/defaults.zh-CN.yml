@@ -1,4 +1,8 @@
 zh-CN:
+  helpers:
+    submit:
+      create: "创建%{model}"
+      update: "保存修改"
   simple_form:
     "yes": '是'
     "no": '否'

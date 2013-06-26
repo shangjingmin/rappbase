@@ -1,9 +1,14 @@
 zh-CN:
-  simple_form:
-    labels:
+  activerecord:
+    models:
+      test: '测试'
+    attributes:
       test:
         string: '字符串'
         float: '浮点'
+  simple_form:
+    labels:
+      test:
         edit:
           float: '修改浮点'
     placeholders:
