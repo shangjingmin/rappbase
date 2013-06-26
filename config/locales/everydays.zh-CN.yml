@@ -1,0 +1,30 @@
+zh-CN:
+  activerecord:
+    models:
+      everyday: '每一天'
+    attributes:
+      everyday:
+        category: '分类'
+        event: '事件'
+        begin_at: '时间'
+        quantity: '数量'
+        scene: '地点'
+        remark: '备注'
+  simple_form:
+    placeholders:
+      everyday:
+        category: '选择事件后类别自动填充'
+    options:
+      everyday:
+        category:
+          sleep: '睡觉'
+          cry: '哭'
+          feed: '吃'
+          medicine: '药'
+          excreta: '拉'
+          wash: '洗'
+          others: '其它'
+        event:
+          deep: '熟睡'
+          light: '浅睡'
+          cry: '哭'
