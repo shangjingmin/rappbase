@@ -1,0 +1,25 @@
+zh-CN:
+  simple_form:
+    "yes": '是'
+    "no": '否'
+    required:
+      text: 'required'
+      mark: '*'
+      # You can uncomment the line below if you need to overwrite the whole required html.
+      # When using html, text and mark won't be used.
+      # html: '<abbr title="required">*</abbr>'
+    error_notification:
+      default_message: "请检查以下错误:"
+    # Labels and hints examples
+    labels:
+      defaults:
+        password: 'Password'
+      test:
+        string: '字符串'
+        float: '浮点'
+        edit:
+          float: '修改浮点'
+    placeholders:
+      defaults:
+        string: '输入字符串'
+        float: '输入浮点型数值'
