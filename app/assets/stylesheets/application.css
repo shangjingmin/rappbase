@@ -10,5 +10,7 @@
  *
  *= require_self
  *= require foundation_and_overrides
+ *= require jquery/jquery-ui-1.10.3.custom
+ *= require jquery/jquery-ui-timepicker-addon
  *= require_tree .
  */
