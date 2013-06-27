@@ -6,10 +6,10 @@
     <%= f.input :integer %>
     <%= f.input :float %>
     <%= f.input :decimal %>
-    <%= f.input :datetime, as: "string", input_html: {class: "datetime-picker"} %>
-    <%= f.input :timestamp, as: "string", input_html: {class: "time-picker"} %>
-    <%= f.input :time, as: "string", input_html: {class: "time-picker"} %>
-    <%= f.input :date, as: "string", input_html: {class: "date-picker"} %>
+    <%= f.input :datetime %>
+    <%= f.input :timestamp %>
+    <%= f.input :time %>
+    <%= f.input :date %>
     <%= f.input :boolean %>
     <%= f.input :text %>
     <%= "f.input :binary (error: no input)"  %>
@@ -18,14 +18,4 @@
   <div class="form-actions">
     <%= f.button :submit %>
   </div>
-<% end %>
-
-<% content_for :customerjs do %>
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $(".date-picker").datepicker();
-      $(".time-picker").timepicker();
-      $(".datetime-picker").datetimepicker();
-    })
-  </script>
 <% end %>
