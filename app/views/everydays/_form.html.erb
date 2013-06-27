@@ -3,7 +3,7 @@
 
   <div class="form-inputs">
     <%= f.input :event, collection: Everyday::CATEGORY_EVENTS.values.flatten %>
-    <%= f.input :begin_at, as: "string", input_html: {class: "datetime-picker", value: @everyday.category || Time.now} %>
+    <%= f.input :begin_at %>
     <%= f.input :quantity %>
     <%= f.input :scene %>
     <%= f.input :category, input_html: {readonly: "readonly"} %>
@@ -18,14 +18,10 @@
 <% content_for :customerjs do %>
   <script type="text/javascript">
     $(document).ready(function(){
-
       $("#everyday_event").change(function(){
         var ec = <%= Everyday::EVENTS_CATEGORY.to_json.html_safe %>;
         $("#everyday_category").val(ec[$(this).children('option:selected').val()]);
       });
-      $(".date-picker").datepicker();
-      $(".time-picker").timepicker();
-      $(".datetime-picker").datetimepicker();
     })
   </script>
 <% end %>
