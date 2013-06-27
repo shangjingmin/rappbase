@@ -19,13 +19,3 @@
     <%= f.button :submit %>
   </div>
 <% end %>
-
-<% content_for :customerjs do %>
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $(".date-picker").datepicker();
-      $(".time-picker").timepicker();
-      $(".datetime-picker").datetimepicker();
-    })
-  </script>
-<% end %>
