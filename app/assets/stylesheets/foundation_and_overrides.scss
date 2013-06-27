@@ -1270,3 +1270,8 @@ $default-float: left;
 // $topbar-sticky-class: ".sticky";
 
 @import 'foundation';
+
+form.custom .custom.dropdown.time, form.custom .custom.dropdown.datetime, form.custom .custom.dropdown.date {
+  width: 15%;
+  display: inline-block;
+}
