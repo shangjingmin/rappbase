@@ -1,3 +1,19 @@
-<div class="row">
-  header
-</div>
+<nav class="top-bar">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="#"><%= $conf[:name] %></a></h1>
+    </li>
+    <li class="toggle-topbar menu-icon">
+      <a href="#">
+        <span>Menu</span>
+      </a>
+    </li>
+  </ul>
+
+  <section class="top-bar-section">
+    <ul>
+      <li class="divider hide-for-small"></li>
+      <%= foundation_header_navs $conf[:header_navs] %>
+    </ul>
+  </section>
+</nav>

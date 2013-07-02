@@ -9,6 +9,10 @@ if defined?(Bundler)
   # Bundler.require(:default, :assets, Rails.env)
 end
 
+# 初始化全局配置
+require File.expand_path('../conf', __FILE__)
+$conf = Conf.new
+
 module Rappbase
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
