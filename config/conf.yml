@@ -1,10 +1,10 @@
 defaults: &defaults
-  name: rappbase
+  name: bud
   secret_token: '1e87b9116f5d5aa97e59ca428647baea9edfe769439ff5ee034b8ab1a39e617ae98fcc117c7a8fcdefa4e89c3b4eaa1507b84b7bb5c33f7f6a81bfe6ac373440'
   header_navs:
-    test:
-      new: "/tests/new"
-      index: "/tests"
+    everyday:
+      new: "/everydays/new"
+      index: "/everydays"
 
 development: &unpro_settings
   <<: *defaults
