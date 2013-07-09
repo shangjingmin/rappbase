@@ -17,6 +17,7 @@
 //= require jquery/jquery-ui-timepicker-addon
 //= require jquery/jquery-ui-timepicker-zh-CN
 //= require foundation
+//= require responsive-tables
 //= require rails.validations
 //= require rails.validations.simple_form
 //= require rails.validations.simple_form.foundation
