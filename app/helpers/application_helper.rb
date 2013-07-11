@@ -1,5 +1,5 @@
 module ApplicationHelper
-
+  include SimpleSearch::Helper
   # navs: hash
   def foundation_header_navs navs
     "" and return if !navs.is_a?(Hash)
@@ -20,4 +20,5 @@ module ApplicationHelper
 
     ret.html_safe
   end
+
 end

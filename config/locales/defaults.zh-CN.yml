@@ -1,7 +1,13 @@
 zh-CN:
+  helpers:
+    submit:
+      index: 查询%{model}
+    query: 查询
+    search: 搜索
   simple_form:
     "yes": '是'
     "no": '否'
+    search: 搜索
     required:
       text: 'required'
       mark: '*'
